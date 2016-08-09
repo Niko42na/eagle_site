@@ -1,0 +1,1071 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: visible;
+}
+/*
+================================================================
+Start
+================================================================
+*/
+.start{
+	background-image: url("../images/pics/layer-15.png");
+	height: 1000px;
+	background-size: cover;
+	background-position: center;
+}
+.wrapper{
+	width: 1210px;
+	margin: 0 auto;
+}
+.start-logo{
+	font: 30px/30px Montserrat, sans-serif;
+	color: white;
+	float: left;
+}
+.start-menu{
+	float: right;
+}
+.start-logo, .start-menu{
+	margin-top: 28px;
+}
+.start-menu-list li{
+	list-style-type: none;
+	display: inline-block;
+  	margin-right: 55px;
+  	color: white;
+  	font: 14px/14px Montserrat, sans-serif;
+  	text-transform: uppercase;
+  	text-decoration: none;
+  	position: relative;
+}
+.start-menu-list li:last-child{
+	margin-right: 0;
+}
+.start-menu-list li a{
+	font: 14px/14px Montserrat, sans-serif;
+	text-decoration: none;
+	color: white;
+}
+/*ClearFix*/
+.start-header::before,
+.start-header::after {
+  content: "";
+  display: table;
+}
+.start-header::after {
+  clear: both;
+}
+.start-header{
+	clear: both;
+  	*zoom: 1;
+}
+
+.start-title{
+	color: white;
+  	font: 72px/72px "Kaushan Script", sans-serif;
+  	margin-top: 178px;
+  	text-align: center;
+}
+.start-title-big{
+	color: white;
+  	font: 150px/135px Montserrat, sans-serif;
+  	text-align: center;
+  	text-transform: uppercase;
+  	margin-top: 42px;
+  	vertical-align: bottom;
+}
+/**/
+.start-title-big:after{
+	content:'';
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #fff;
+	margin: 60px auto 50px;
+}
+.start-button{
+	text-align: center;
+	width: 160px;
+	height: 40px;
+	border: 3px solid #fff;
+	margin: 50px auto; 
+	color: #fff;
+}
+.start-button p{
+	text-transform: uppercase;
+	font: 14px/35px Montserrat, sans-serif;
+}
+.start-menu-bottom{
+	font-size: 0;
+	margin-top: 157px;
+}
+.start-menu-bottom_list li{
+	display: inline-block;
+	width: 280px;
+	height: 45px;
+	vertical-align: bottom;
+	margin-right: 30px;
+	margin-bottom: 28px;
+	font: 18px/45px Montserrat, sans-serif;
+	text-transform: uppercase;
+	color: #c3c2c6;
+}
+.start-menu-bottom_list li:before{
+	content: '';
+	display:block;
+	width:280px;
+	height: 3px;
+	background: #c3c2c6;
+}
+.start-menu-bottom_list li:last-child{
+	margin-right: 0px;
+}
+.start-menu-bottom_list span{
+	font: 24px/45px Montserrat, sans-serif;
+}
+
+
+/*
+================================================================
+Start эффекты и переходы
+================================================================
+*/
+
+/*анимация верхнего меню*/
+.start-menu-list a:after{
+    position: absolute;
+    transition: .3s;
+    content: '';
+    width: 0;
+    left: 50%;
+    top: 20px;
+    height: 2px;
+    background: #fce38a;
+}
+.start-menu-list a:hover:after {
+  width: 100%;
+  left: 0;
+}
+.start-menu-list a:hover{
+	color: #fce38a;
+}
+
+/*анимация загрузки*/
+
+.animated{ 
+  animation-duration: 2s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+/*ховер кнопки*/
+.start-button:hover{
+	border: 3px solid #fce38a;
+	color: #fce38a;
+	transition: all .5s ease-out;
+	cursor: pointer;
+	transform: scale(1.05);
+}
+
+/*ховер нижних ссылок*/
+
+.start-menu-bottom_list li:hover:before{
+	content: '';
+	display:block;
+	width:280px;
+	height: 3px;
+	background:linear-gradient(to right, rgba(243,129,129,1) 0%, 
+		rgba(243,129,129,1) 25%, rgba(250,250,250,1) 25%, 
+		rgba(252,252,252,1) 100%);
+}
+.start-menu-bottom_list li:hover{
+	color: white;
+}
+
+/*
+================================================================
+About
+================================================================
+*/
+.about{
+	background-color: #fff;
+	height: 929px;
+}
+
+.header-intro{
+	text-align: center;
+	margin-top: 91px;
+	font: 24px "Kaushan Script", sans-serif;
+	color: #333;
+}
+.header-main{
+	text-align: center;
+	margin-top: 23px;
+	font: 30px Montserrat, sans-serif;
+	color: #333;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.header-main:after{
+	content:'';
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #f38181;
+	margin: 40px auto 47px;
+}
+.default-text-container{
+	width: 954px;
+	margin: 0 auto;
+}
+.default-text{
+	color: #999;
+	font: 15px/24px Roboto, sans-serif;
+	text-align: center;
+}
+.about-gallery{
+	width: 1210px;
+	font-size: 0;
+	margin:101px auto 110px;
+}
+.about-gallery-item{
+	display: inline-block;
+	margin-right: 35px;
+	background-color: #95e1d3;
+	width: 380px;
+	height: 250px;
+}
+.about-gallery-item:nth-child(3n){
+	margin-right: 0;
+}
+.about-gallery-item:nth-child(n+4){
+	margin-top: 30px;
+}
+.about-gallery-item-one{
+	width: 380px;
+	height: 250px;
+	background: url(../images/pics/layer-44.png);
+}
+.about-gallery-item-two{
+	width: 380px;
+	height: 250px;
+	background: url(../images/pics/layer-39.png);
+}
+.about-gallery-item-three{
+	width: 380px;
+	height: 250px;
+	background: url(../images/pics/layer-41.png);
+}
+.about-gallery-picture-text{
+	color: red;
+	font: 18px/250px Montserrat, sans-serif;
+	color: white;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	visibility: hidden;
+}
+.about-gallery-picture-text:before{
+	content: '';
+	display: block;
+	width: 32px;
+	height: 23px;
+	position: relative;
+	top: 104px;
+	left: 174px;
+	background: url(../images/func/users.png);
+}
+
+.about-bottom{
+	background-color: #95e1d3;
+	font-size: 0;
+}
+.about-bottom-item{
+	display: inline-block;
+	width:20%;
+	/*font-size: 0;*/
+	border-left: 1px solid #b1e9de; 
+	text-align: center;
+	padding: 90px 0;
+}
+
+.about-bottom-item:before{
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	content: "";
+}
+
+.about-bottom-item:nth-child(5n){
+	border-right: 1px solid #b1e9de; 
+}
+.about-bottom-item:nth-child(n+6){
+	border-top: 1px solid #b1e9de; 
+	background-color: #95e1d3;
+}
+
+.about-bottom-item-text{
+	display: inline-block;
+	vertical-align: middle;
+	font: 14px Montserrat, sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+}
+.about-bottom-item-text span{
+	font-size: 72px;
+	font-weight: 700;
+}
+
+/*
+================================================================
+About эффекты и переходы
+================================================================
+*/
+
+.swip:hover{
+	transition: all .5s ease-out;
+	transform: translate(-10px, -10px);
+}
+
+.swip:hover .about-gallery-picture-text{
+	visibility: visible;
+}
+/*спробуй через box-shadow, а не через блоки*/
+
+
+/*
+================================================================
+Services
+================================================================
+*/
+
+.services{
+	background-color: #fff;
+	margin-top: 150px;
+}
+.services-container{
+	font-size: 0;
+	margin-bottom: 80px;
+}
+.services-item{
+	display:inline-block;
+	width: 33.3%;
+	color: black;
+	font-size: 14px;
+	padding: 49px 35px 49px 90px;
+	position: relative;
+}
+.services-item::before{
+	content: '';
+	width: 32px;
+	height: 32px;
+	display: block;
+	position: absolute;
+	left: 28px;
+	background-color: red;
+}
+.services-item-one::before{
+	background:  url(../images/func/alarm.png);
+}
+.services-item-two::before{
+	background:  url(../images/func/line-graph.png);
+}
+.services-item-three::before{
+	background:  url(../images/func/computer--ok.png);
+}
+.services-item-four::before{
+	background:  url(../images/func/book-2.png);
+}
+.services-item-five::before{
+	background:  url(../images/func/home.png);
+}
+.services-item-six::before{
+	background:  url(../images/func/image.png);
+}
+.services-item-header{
+	text-transform: uppercase;
+	font: 14px Montserrat, sans-serif;
+	color: #333;
+	margin-bottom: 20px;
+}
+.services-item-text{
+	color: #999;
+	font: 15px/24px Roboto, sans-serif;
+	display: inline-block;
+}
+.services-item-header:before{
+
+}
+.services-item:nth-child(n+4){
+	border-top: 1px solid #e6e6e6;
+}
+
+/*
+================================================================
+Design
+================================================================
+*/
+.Design{
+	height: 850px;
+	background: url("../images/pics/layer-45.png") no-repeat;
+	background-size: cover;
+	background-position: center;
+	position:relative;
+	padding-top: 0.1px;
+}
+.Design-tablet{
+	position:absolute;
+	bottom: 0;
+	left: 36%;
+}
+.Design-phone{
+	position:absolute;
+	bottom: -91px;
+	right: 31%;
+}
+/*
+как сделать так, что бы картинки не плавали при 4/3 - медиазапросы
+*/
+
+
+/*
+================================================================
+WeDo
+================================================================
+*/
+
+.WeDo-container{
+	font-size: 0;
+	margin-top: 92px;
+	position: relative;
+	width: 1200px;
+}
+.WeDo-container-img, .WeDo-container-list{
+	display:inline-block;
+}
+.WeDo-container-img{
+	width: 600px;
+	padding-right: 30px;
+}
+.WeDo-container-list{
+	position: absolute;
+	top: 0;
+}
+
+/*акордеон */
+.accordion{
+	font-size: medium;
+	width: 600px;
+}
+.accordion input {
+	display: none;
+}
+.box {
+	margin-bottom: 10px;
+	position: relative;
+	background: white;
+	border: 1px solid #e5e5e5;
+    height: 60px;
+}
+.box i{
+	padding-left: 15px;
+}
+.box-title {
+	width: 540px;
+	height: 54px;
+	line-height: 60px;
+	padding-left: 15px;
+	display: inline-block;
+	cursor: pointer;
+	font-family: Montserrat, sans-serif;
+	text-transform: uppercase;
+}
+.box-content {
+	width: auto;
+	padding: 0 20px;
+	color: #ccc;
+	display: none;
+	height: 180px;
+	overflow-y: auto;
+	border-top: 1px solid #e5e5e5;
+
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 300;
+	font-style: italic;
+	line-height: 24px;
+}
+.box-content p{
+	margin: 20px 0;
+}
+.box-close {
+	position: absolute;
+	height: 64px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	display: none;
+}
+input:checked + .box {
+	height: auto;
+}
+input:checked + .box .box-content,
+input:checked + .box .box-close {
+	display: inline-block;
+}
+
+/*Скролл*/
+::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+::-webkit-scrollbar-track-piece {
+    background: #f5f5f5;  
+    border-radius: 2px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background: #95e1d3; 
+}
+
+.WeDo-quotes{
+	margin: 190px auto 0;
+	height: 151px;
+	position: relative;
+}
+.WeDo-quotes-arrow_left, .WeDo-quotes-arrow_right{
+	width: 12px;
+	height: 22px;
+	position: absolute;
+	top: 65px;
+	cursor: pointer;
+}
+.WeDo-quotes-arrow_left{
+	left: 0;
+	background-image: url("../images/func/arrow--down-copy-2.png");
+}
+.WeDo-quotes-arrow_right{
+	right: 0;
+	background-image: url("../images/func/arrow--down-copy.png");
+}
+.WeDo-quotes-content{
+	width: 980px;
+	height: 100%;
+	margin: 0 auto;
+}
+.WeDo-quotes-icon{
+	height: 100%;
+	width: 150px;
+	border: 3px solid #95e1d3;
+	background-image: url("../images/func/speech-4.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	float: left;
+}
+.WeDo-quotes-text{
+	float: right;
+	margin-left: 60px;
+	width:770px;
+	height: 150px;
+	color: #999;
+	font: italic 300 24px/36px Roboto, sans-serif;
+
+}
+.WeDo-quotes-text-autor{
+	clear: both;
+	position: relative;
+	margin-top: 23px;
+	color: #333;
+	font: 24px/24px "Kaushan Script", sans-serif;
+	margin-left:70px;
+}
+
+.WeDo-quotes-text-autor::before{
+	content: '';
+	position: absolute;
+	left:-70px;
+	bottom: 7px;
+	display: block;
+	width: 60px;
+	height: 3px;
+	background-color: #f38181; 
+}
+
+/*
+================================================================
+WhoWeAre
+================================================================
+*/
+.WhoWeAre .header-intro{
+	margin-top: 170px;
+}
+
+.WhoWeAre-gallery{
+	margin-top: 92px;
+	font-size: 0;
+}
+.WhoWeAre-gallery-item{
+	display: inline-block;
+	width: 31.4%;
+	margin-right:2.9%;
+	font-size: medium;
+	height: 542px;
+	transition: all .5s ease-in-out;
+}
+
+.WhoWeAre-gallery-item:nth-child(3n){
+	margin-right:0;
+}
+
+.WhoWeAre-gallery-item:nth-child(n+4){
+	margin-top: 2.9%;
+}
+
+.WhoWeAre-gallery-picture{
+	display: block;
+	position: relative;
+}
+.WhoWeAre-gallery-picture:hover img{
+	transition: all .5s ease-in-out;
+	position: relative;
+	top: -10px;
+	left: -10px;
+	box-shadow: 10px 10px 0 0 #95e1d3;
+}
+
+.WhoWeAre-gallery-text {
+	margin-top: 30px;
+	text-align: center;
+}
+.WhoWeAre-gallery-text h3{
+	font: 14px/14px Montserrat, sans-serif;
+	text-transform: uppercase;
+}
+.WhoWeAre-gallery-text p{
+	margin-top: 15px;
+	font: italic 300 15px/24px Roboto, sans-serif;
+	color: #999;
+}
+
+.WhoWeAre-logos{
+	margin: 120px auto 0;
+	text-align: center;
+}
+
+/*
+================================================================
+SomeOurWork
+================================================================
+*/
+
+.SomeOurWork .header-intro{
+	margin-top: 160px;
+}
+
+.SomeOurWork-gallery{
+	margin: 100px auto;
+	font-size: 0;
+	overflow-x: hidden; 
+}
+
+.SomeOurWork-gallery-item{
+	display: inline-block;
+	width: 25%;
+}
+.SomeOurWork-gallery-item img{
+	display: block;
+}
+.SomeOurWork .WeDo-quotes{
+	margin: 100px auto 130px;
+	height: 210px;
+
+}
+.SomeOurWork .WeDo-quotes-arrow_left, .SomeOurWork .WeDo-quotes-arrow_right{
+	top: 95px;
+}
+.SomeOurWork .WeDo-quotes-content{
+	width: 1080px;
+}
+
+.SomeOurWork .WeDo-quotes-icon{
+	width: 210px;
+	height: 210px;
+	border: none;
+	background-image: url("../images/pics/layer-36.png");
+}
+
+.SomeOurWork .WeDo-quotes-text{
+	margin: 40px 70px 0 0;
+}
+
+/*
+================================================================
+WhatPeopleSay
+================================================================
+*/
+.WhatPeopleSay{
+	background-image: url("../images/pics/layer-53.png");
+	height: 830px;
+	background-size: cover;
+	background-position: center;
+    padding-top: 0.1px;
+    margin-bottom: 110px;
+}
+.WhatPeopleSay .header-intro{
+	margin-top: 110px;
+}
+.WhatPeopleSay .header-main {
+    margin-top: 16px;
+}
+
+
+.WhatPeopleSay-content{
+	font-size: 0;
+	margin: 87px auto 0;
+	width: 1110px;
+}
+.WhatPeopleSay-content-item{
+	font-size: medium;
+	display: inline-block;
+	width: 47.3%;
+	margin-right: 5.4%;
+}
+.WhatPeopleSay-content-item:nth-child(2n){
+	margin-right:0;
+}
+.WhatPeopleSay-content-item:nth-child(n+3){
+	margin-top:3%;
+}
+
+.WhatPeopleSay-content-item img{
+	float:left;
+}
+.WhatPeopleSay-content-item-text{
+	margin-left: 140px;
+}
+
+.WhatPeopleSay-content-item-text h3{
+	color: #fff;
+	font: 14px/14px Montserrat, sans-serif;
+	text-transform: uppercase;
+	margin-top:12px;
+}
+
+.WhatPeopleSay-content-item-text p{
+	margin-top: 15px;
+	font: italic 300 15px/24px Roboto, sans-serif;
+	color: #fff;
+}
+
+.WhatPeopleSay-content-item-text p:nth-of-type(2n){
+	font-weight: 400;
+	font-style: normal;
+	margin-top:44px;
+}
+
+.WhatPeopleSay-content-item-text p:first-of-type::after{
+	content:'';
+	display: block;
+	position: absolute;
+	width: 60px;
+	height: 3px;
+	background: #f38181;
+	margin-top: 17px;
+}
+/*
+================================================================
+OurStories
+================================================================
+*/
+.OurStories-blog{
+	width: 1200px;
+	font-size: 0;
+	margin: 50px auto 120px;
+}
+.OurStories-blog-item{
+	display: inline-block;
+	width: 31.6%;
+	position: relative;
+	margin-right: 2.6%;
+}
+.OurStories-blog-item:nth-child(3n){
+	margin-right:0;
+}
+.OurStories-blog-item:nth-child(n+3){
+	margin-top: 2.6%;
+}
+.OurStories-blog-item img{
+	display: block;
+	width: 380px;
+}
+.OurStories-blog-item-text h3{
+	font: 14px/14px Montserrat, sans-serif;
+	text-transform: uppercase;
+	margin-top:20px;
+}
+.OurStories-blog-item-text p{
+	margin-top:20px;
+	font: 15px/24px Roboto, sans-serif;
+	color: #999;
+}
+
+
+.OurStories-blog-item-inf{
+	margin-top:20px;
+	border-top: 1px solid #e5e5e5;
+}
+.OurStories-blog-item-inf li{
+	position: relative;
+	display: inline-block;
+  	margin: 20px 40px 0 30px;
+  	font: 15px/24px Roboto, sans-serif;
+	color: #999;
+}
+.OurStories-blog-item-inf li:last-child{
+	margin-right:0;
+}
+.OurStories-blog-item-inf li::before{
+	content:'';
+	position:absolute;
+	left: -25px;
+    bottom: 5px;
+	display: block;
+	width: 20px;
+	height: 13px;
+	background:  url(../images/func/view.png) no-repeat;
+
+}
+
+.OurStories-blog-item-inf li:last-child::before{
+	width: 16px;
+	height: 14px;
+	left: -20px;
+	background:  url(../images/func/speech-bubble-2.png) no-repeat;
+}
+
+.OurStories-blog-item-date{
+	position:absolute;
+	background-color: #95e1d3;
+	width: 60px;
+	height: 70px; 
+	text-align: center;
+	color: white;
+	padding: 15px;
+	bottom: 180px;
+	left: -10px;
+}
+
+.OurStories-blog-item-date h3{
+	font:700 30px/30px Montserrat, sans-serif;
+	text-transform: uppercase;
+}
+
+.OurStories-blog-item-date p{
+	font: italic 300 15px/15px Roboto, sans-serif;
+
+}
+
+.OurStories-map{
+	background-image: url("../images/pics/layer-59.png");
+	height: 200px;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	padding-top: 100px;
+}
+
+.OurStories-map a{
+	text-decoration: none;
+	font:700 24px Montserrat, sans-serif;
+	text-transform: uppercase;
+	color: #f38181;
+	cursor: pointer;
+	position: relative;
+}
+.OurStories-map a::before{
+	content:'';
+	display: block;
+	position: absolute;
+	top: -30px;
+	left: 43%;
+	width: 20px;
+	height: 26px;
+	background:  url(../images/func/pin-2.png) no-repeat;
+
+}
+
+.OurStories-map a::after{
+	content:'';
+	display: block;
+	position: absolute;
+	width: 60px;
+	height: 3px;
+	background-color: #f38181;
+	top: 40px;
+    left: 28%;
+}
+/*
+================================================================
+OurStories
+================================================================
+*/
+.footer{
+	margin-top: 75px;
+}
+
+.footer-followus{
+	display: inline-block;
+	width: 470px;
+	margin-right: 50px;
+}
+.footer-followus h2{
+	color: #ccc;
+	font: 700 46px Montserrat, sans-serif;
+	margin-bottom: 40px;
+}
+.footer-followus p{
+	color: #999;
+	font: 15px/24px Roboto, sans-serif;
+	margin-bottom: 48px;
+}
+
+.footer-followus p:nth-of-type(2){
+	font: 14px Montserrat, sans-serif;
+	margin-bottom: 18px;
+}
+.footer-followus p span{
+	color: black;
+	font-size: 18px;
+	font-weight: 700;
+}
+.footer-followus-links {
+	border-top: 1px solid #e5e5e5;
+	padding-top: 15px;
+}
+.footer-followus-links i{
+	margin: auto 5px;
+}
+.footer-followus input, .footer-followus-links p{
+	font:300 italic 15px/24px Roboto, sans-serif;
+	margin-bottom: 37px;
+}
+.footer-followus input{
+	width: 230px;
+	height: 40px;
+	background-color: white;
+	border: 1px solid #e7e7e7;
+	padding: 14px;
+}
+.footer-followus button {
+	width: 150px;
+	height: 40px;
+	background-color: #95e1d3;
+	border: 0;
+	color: white;
+	font: 700 14px Montserrat, sans-serif;
+	text-transform: uppercase;
+}
+
+
+.footer-blogs{
+	display: inline-block;
+	margin-right: 55px;
+}
+.footer-blogs h2, .footer-instagram h2{
+	color: #333;
+	font-family: Montserrat, sans-serif;
+	font-size: 14px;
+	line-height: 32px;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+.footer-blogs-item{
+	width: 345px;
+	margin-bottom: 45px;
+}
+.footer-blogs-item img{
+	float: left;
+}
+
+.footer-blogs-item-text{
+	margin-left: 140px;
+	padding-top: 15px;
+}
+.footer-blogs-item-text h3{
+	color: #333;
+	font-family: Montserrat;
+	font-size: 12px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+.footer-blogs-item-text p{
+	color: #999;
+	font-family: Roboto;
+	font-size: 13px;
+	font-weight: 300;
+	font-style: italic;
+	line-height: 24px;
+}
+
+.footer-instagram{
+	font-size: 0;
+	display: inline-block;
+	width: 275px;
+}
+.footer-instagram img{
+	display: inline-block;
+	margin-right: 3px;
+}
+
+.footer-instagram img:nth-child(n+3){
+	margin-top: 2px;
+}
+.footer-instagram div{
+	margin-bottom: 20px;
+}
+.footer-instagram  a{
+	font-size: medium;
+	text-decoration: none;
+	color: #333;
+	font-family: Roboto;
+	font-size: 13px;
+	font-weight: 300;
+	font-style: italic;
+	line-height: 24px;
+}
+
+.footer-autor{
+	border-top: 1px solid #e5e5e5; 
+	padding: 25px;
+	text-align: center;
+}
+.footer-autor p{
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 400;
+	color: #333;
+}
+.footer-autor span{
+	color: #f38181;
+}
+
+/*Романюк Николай, 15,07,2016*/
